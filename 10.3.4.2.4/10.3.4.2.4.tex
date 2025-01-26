@@ -77,15 +77,37 @@
 	\]
 	
 	\textbf{Step 3: Perform LU decomposition using Doolittle's algorithm}\\
-	The LU decomposition splits \(A\) into a lower triangular matrix \(L\) and an upper triangular matrix \(U\):
+	The LU decomposition splits \(A\) into a lower triangular matrix \(L\) and an upper triangular matrix \(U\) such that:
 	\[
 	A = LU
 	\]
-	where
+	where:
 	\[
-	L = \begin{pmatrix} 1 & 0 \\ l_{21} & 1 \end{pmatrix}, \quad U = \begin{pmatrix} u_{11} & u_{12} \\ 0 & u_{22} \end{pmatrix}.
+	L = \begin{pmatrix} 1 & 0 & 0 & \cdots & 0 \\ l_{21} & 1 & 0 & \cdots & 0 \\ l_{31} & l_{32} & 1 & \cdots & 0 \\ \vdots & \vdots & \vdots & \ddots & 0 \\ l_{n1} & l_{n2} & l_{n3} & \cdots & 1 \end{pmatrix}, \quad
+	U = \begin{pmatrix} u_{11} & u_{12} & u_{13} & \cdots & u_{1n} \\ 0 & u_{22} & u_{23} & \cdots & u_{2n} \\ 0 & 0 & u_{33} & \cdots & u_{3n} \\ \vdots & \vdots & \vdots & \ddots & u_{n-1,n} \\ 0 & 0 & 0 & \cdots & u_{nn} \end{pmatrix}.
 	\]
 	
+	The Doolittle algorithm is computed as follows:
+	
+	1. For \(U\):
+	\[
+	u_{ij} = a_{ij} - \sum_{k=1}^{i-1} l_{ik} u_{kj}, \quad \text{for } i \leq j.
+	\]
+	
+	2. For \(L\):
+	\[
+	l_{ij} = \frac{1}{u_{ii}} \left(a_{ij} - \sum_{k=1}^{i-1} l_{ik} u_{kj} \right), \quad \text{for } i > j.
+	\]
+	
+	3. Diagonal entries of \(L\) are set to 1:
+	\[
+	l_{ii} = 1, \quad \text{for all } i.
+	\]
+	
+	Using these general formulas, we compute \(L\) and \(U\) for our specific problem:
+	\[
+	A = \begin{pmatrix} 1 & 1 \\ 50 & 100 \end{pmatrix}.
+	\]
 	\textbf{Step 3.1: Compute the elements of \(L\) and \(U\)}\\
 	\begin{align}
 		u_{11} &= a_{11} = 1, \quad u_{12} = a_{12} = 1 \\
