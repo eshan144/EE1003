@@ -1,0 +1,6 @@
+\beamer@sectionintoc {2}{Problem}{3}{0}{1}
+\beamer@sectionintoc {3}{Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Linear Equations}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{LU Decomposition}{5}{0}{2}
+\beamer@subsectionintoc {3}{3}{Forward and Backward Substitution}{8}{0}{2}
+\beamer@subsectionintoc {3}{4}{Plotting the curve}{10}{0}{2}

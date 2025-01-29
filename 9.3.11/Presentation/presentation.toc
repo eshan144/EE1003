@@ -1,0 +1,7 @@
+\beamer@sectionintoc {2}{Problem}{3}{0}{1}
+\beamer@sectionintoc {3}{Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Laplace Transform Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{Z-Transform}{6}{0}{2}
+\beamer@subsectionintoc {3}{3}{Bilinear Transform}{8}{0}{2}
+\beamer@subsectionintoc {3}{4}{Difference Equation}{10}{0}{2}
+\beamer@subsectionintoc {3}{5}{Plotting the curve}{11}{0}{2}

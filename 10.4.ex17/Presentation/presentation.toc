@@ -1,0 +1,7 @@
+\beamer@sectionintoc {2}{Problem}{3}{0}{1}
+\beamer@sectionintoc {3}{Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Quadratic Equation}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{Theoretical Solution}{5}{0}{2}
+\beamer@subsectionintoc {3}{3}{Computational Newton's Method}{6}{0}{2}
+\beamer@subsectionintoc {3}{4}{Companion Matrix}{8}{0}{2}
+\beamer@subsectionintoc {3}{5}{Plotting the curve}{11}{0}{2}
